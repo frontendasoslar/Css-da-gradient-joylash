@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+/* Meros qilib olish */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: #fff;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*:focus {
+  outline: 2px dotted var(--outline-color);
+  outline-offset: 3px;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+/* Gradient bu bitta rangdan ikkinchi rangao'tish jarayoni */
+.box {
+  height: 800px;
+  background-color: aquamarine;
+  /* Gradient ni browser rang emas rasm sifatida ochadi shu sababli gradientni bacgroundimg: da berishimiz kerak */
+
+  /* Gradientni  bacgroundimg da url() bilan emas liner-gradient() bilan berishimiz kerag*/
+  background-image: linear-gradient(
+
+  to left bottom, /* Rangni qaysi tomonga yurishini ko'rsatadi. Uni to left, to bottom, to top, to right top, to right bottom, to left top, to left bottom larda va graduslarda ham berishimiz mumkunmasalan 90deg (90gradus) */
+  blue, red, white /* Ranglar */
+/*  */
+  );
+}
