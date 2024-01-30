@@ -50,7 +50,29 @@ img {
 
   to left bottom, /* Rangni qaysi tomonga yurishini ko'rsatadi. Uni to left, to bottom, to top, to right top, to right bottom, to left top, to left bottom larda va graduslarda ham berishimiz mumkunmasalan 90deg (90gradus) */
   blue, red, white /* Ranglar */
+  );
+  margin-bottom: 50px;
+}
+
+.box2 {
   /* Bundan tashqari biz gradientni qaysi nuqtada boshlanib qaysi nuqtada tugashini ham belgilasak bo'ladi */
+  height: 800px;
+  background-color: bisque;
+  background-image: linear-gradient(
     to right,
+    darkblue 0,
+    darkblue 300px,
+    /* 0 dan 300px gacha ko'k rang*/
+    darkgreen 300px,
+    darkgreen 600px,
+    /* 300px dan 600px gacha yashil rang */
+    red 600px,
+    red 750px,
+    /* 600px dan 750px gacha qizil rang*/
+    black 800px,
+    black 900px,
+    /* 70px dan 800px gacha qizil rangdan qora ranga o'tadi, 800px dan 900px gacha  qora rang*/
+    white 1000px
+    /* 900px dan 1000px gacha qoradan oqqa o'tadi va 1000px dan to'liq oq rang bo'ladi */
   );
 }
