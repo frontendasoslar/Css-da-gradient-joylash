@@ -76,4 +76,17 @@ img {
     /* 900px dan 1000px gacha qoradan oqqa o'tadi va 1000px dan to'liq oq rang bo'ladi */
   );
 }
+
+.flag {
   height: 800px;
+  background-image: linear-gradient(
+    rgb(0, 110, 255) 30%,
+    red 30%,
+    red 35%,
+    white 35%,
+    white 65%,
+    red 65%,
+    red 70%,
+    green 70%
+  );
+}
