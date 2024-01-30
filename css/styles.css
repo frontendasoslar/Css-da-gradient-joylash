@@ -50,6 +50,7 @@ img {
 
   to left bottom, /* Rangni qaysi tomonga yurishini ko'rsatadi. Uni to left, to bottom, to top, to right top, to right bottom, to left top, to left bottom larda va graduslarda ham berishimiz mumkunmasalan 90deg (90gradus) */
   blue, red, white /* Ranglar */
-/*  */
+  /* Bundan tashqari biz gradientni qaysi nuqtada boshlanib qaysi nuqtada tugashini ham belgilasak bo'ladi */
+    to right,
   );
 }
